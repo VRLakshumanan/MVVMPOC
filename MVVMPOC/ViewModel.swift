@@ -67,6 +67,7 @@ class MessierViewModel
         
         if let date = dateFormatterGet.date(from: dateString) {
             updatedDate = date
+            print("updated date from")
             return "Updated: " + dateFormatterPrint.string(from: date)
         }
         else {
