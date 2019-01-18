@@ -14,6 +14,9 @@
 		089B6ED621F062CA0031916E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089B6ED421F062CA0031916E /* LaunchScreen.storyboard */; };
 		089B6EE121F062CA0031916E /* MVVMPOCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089B6EE021F062CA0031916E /* MVVMPOCTests.swift */; };
 		089B6EEC21F062CA0031916E /* MVVMPOCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089B6EEB21F062CA0031916E /* MVVMPOCUITests.swift */; };
+		089B6EFA21F063780031916E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089B6EF921F063780031916E /* DetailViewController.swift */; };
+		089B6EFC21F091610031916E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089B6EFB21F091610031916E /* Model.swift */; };
+		089B6EFE21F0A4FC0031916E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089B6EFD21F0A4FC0031916E /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		089B6EE721F062CA0031916E /* MVVMPOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMPOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		089B6EEB21F062CA0031916E /* MVVMPOCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMPOCUITests.swift; sourceTree = "<group>"; };
 		089B6EED21F062CA0031916E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		089B6EF921F063780031916E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		089B6EFB21F091610031916E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		089B6EFD21F0A4FC0031916E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,11 @@
 		089B6ECA21F062C70031916E /* MVVMPOC */ = {
 			isa = PBXGroup;
 			children = (
+				089B6EFB21F091610031916E /* Model.swift */,
+				089B6EFD21F0A4FC0031916E /* ViewModel.swift */,
 				089B6ECB21F062C70031916E /* AppDelegate.swift */,
 				089B6ECD21F062C70031916E /* ViewController.swift */,
+				089B6EF921F063780031916E /* DetailViewController.swift */,
 				089B6ECF21F062C70031916E /* Main.storyboard */,
 				089B6ED221F062CA0031916E /* Assets.xcassets */,
 				089B6ED421F062CA0031916E /* LaunchScreen.storyboard */,
@@ -256,8 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				089B6EFE21F0A4FC0031916E /* ViewModel.swift in Sources */,
+				089B6EFA21F063780031916E /* DetailViewController.swift in Sources */,
 				089B6ECE21F062C70031916E /* ViewController.swift in Sources */,
 				089B6ECC21F062C70031916E /* AppDelegate.swift in Sources */,
+				089B6EFC21F091610031916E /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +447,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XNVAQEPBFV;
 				INFOPLIST_FILE = MVVMPOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +466,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XNVAQEPBFV;
 				INFOPLIST_FILE = MVVMPOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
